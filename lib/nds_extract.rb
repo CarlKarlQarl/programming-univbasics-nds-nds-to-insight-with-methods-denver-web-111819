@@ -25,3 +25,4 @@ end
 
 #pp directors_database
 #pp directors_database[0]
+puts gross_for_director(directors_database[0])
