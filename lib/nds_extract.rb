@@ -16,8 +16,8 @@ end
 # using director_data as input
 def gross_for_director(director_data)
   director_gross = 0
-  director_data[:movie].length.times do |cycle_titles|
-    director_gross += director_data[:movie][cycle_titles][:worldwide_gross]
+  director_data[:movies].length.times do |cycle_titles|
+    director_gross += director_data[:movies][cycle_titles][:worldwide_gross]
   end
   return director_gross
 end
@@ -26,5 +26,5 @@ end
 #pp directors_database
 #pp directors_database[0]
 director_data = directors_database[0]
-pp director_data[:movie]
+pp director_data[:movies]
 #puts gross_for_director(directors_database[0])
