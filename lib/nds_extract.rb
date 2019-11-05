@@ -25,12 +25,3 @@ def gross_for_director(director_data)
   end
   return director_gross
 end
-
-
-#pp directors_database
-#pp directors_database[0]
-#director_data = directors_database[0]
-#pp director_data[:movies]
-#puts gross_for_director(directors_database[0])
-
-pp directors_totals(directors_database)
