@@ -11,7 +11,7 @@ def directors_totals(nds)
   result = {}
   
   nds.length.times do |cycle_directors|
-    result[nds[cycle_directors][:name]] => gross_for_director(nds[cycle_directors])]
+    result[nds[cycle_directors][:name]] => gross_for_director(nds[cycle_directors])
   end
   return result
 end
