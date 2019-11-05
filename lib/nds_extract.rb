@@ -26,5 +26,5 @@ end
 #pp directors_database
 #pp directors_database[0]
 director_data = directors_database[0]
-pp director_data
+pp director_data[:movie]
 #puts gross_for_director(directors_database[0])
