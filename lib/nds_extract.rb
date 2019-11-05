@@ -9,7 +9,11 @@ require 'pp'
 
 def directors_totals(nds)
   result = {}
-  nil
+  
+  nds.length.times do |cycle_directors|
+    result[nds[cycle_directors][:name] => gross_for_director(nds[cycle_directors])]
+  end
+  return result
 end
 
 # Find a way to accumulate the :worldwide_grosses and return that Integer
@@ -25,6 +29,6 @@ end
 
 #pp directors_database
 #pp directors_database[0]
-director_data = directors_database[0]
-pp director_data[:movies]
+#director_data = directors_database[0]
+#pp director_data[:movies]
 #puts gross_for_director(directors_database[0])
